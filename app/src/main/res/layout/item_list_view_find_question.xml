@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+
+    android:paddingTop="20dp">
+
+    <com.whosmyqueen.easypublicproject.view.CircleImageView
+        android:id="@+id/iv_icon_item_find_question"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="15dp"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/iv_icon_item_find_question"
+        android:layout_toEndOf="@+id/iv_icon_item_find_question">
+
+        <TextView
+            android:id="@+id/tv_name_item_find_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorUserNameListView"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_answer_sum_item_find_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="2 个回答"/>
+
+        <TextView
+            android:id="@+id/tv_content_item_find_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_name_item_find_question"
+            android:layout_marginBottom="20dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18dp"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_content_item_find_question"
+            android:background="@drawable/shadow_bottom"/>
+    </RelativeLayout>
+</RelativeLayout>

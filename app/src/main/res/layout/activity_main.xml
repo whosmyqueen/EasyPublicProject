@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.whosmyqueen.easypublicproject.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_container_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/imageView3">
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/shadow_bottom"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_btn_find_main"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bottom_tabs_selector"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_find_main"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/find_tabs_selector"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发现"
+                android:textColor="@color/colorUserNameListView"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_btn_friend_main"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bottom_tabs_selector"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_friend_main"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/friend_tabs_selector"
+                android:button="@null"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="好友"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_btn_msg_main"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bottom_tabs_selector"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_msg_main"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/msg_tabs_selector"
+                android:button="@null"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_btn_user_main"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bottom_tabs_selector"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_user_main"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/user_tabs_selector"
+                android:button="@null"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人"
+                android:textSize="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

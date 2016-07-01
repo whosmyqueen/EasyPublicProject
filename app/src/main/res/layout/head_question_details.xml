@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.whosmyqueen.easypublicproject.view.CircleImageView
+            android:id="@+id/iv_icon_head_question_details"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sdf"/>
+
+        <TextView
+            android:id="@+id/tv_name_head_question_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorUserNameListView"
+            android:textSize="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/iv_icon_head_question_details"/>
+
+        <TextView
+            android:id="@+id/tv_time_head_qustion_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:layout_alignBottom="@+id/iv_icon_head_question_details"
+            android:layout_toEndOf="@+id/iv_icon_head_question_details"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:id="@+id/rl_container_head_question_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_content_head_question_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_margin="15dp"
+        android:id="@+id/btn_answer_head_question_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl_container_head_question_details"
+        android:background="@color/colorUserNameListView"
+        android:text="我来回答"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_answer_head_question_details"
+        android:background="@color/colorContainerBackground"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/tv_answer_sum_head_question_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 个回答"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+</RelativeLayout>
